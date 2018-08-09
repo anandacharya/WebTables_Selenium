@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="34184" started-at="2018-08-09T04:27:43Z" finished-at="2018-08-09T04:28:17Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="34184" started-at="2018-08-09T04:27:43Z" finished-at="2018-08-09T04:28:17Z">
+      <class name="cricket_scorecard">
+        <test-method status="PASS" signature="openCricbuzz()[pri:0, instance:cricket_scorecard@1efbd816]" name="openCricbuzz" is-config="true" duration-ms="23278" started-at="2018-08-09T14:27:43Z" finished-at="2018-08-09T14:28:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCricbuzz -->
+        <test-method status="PASS" signature="webtableAllRecords()[pri:0, instance:cricket_scorecard@1efbd816]" name="webtableAllRecords" duration-ms="6480" started-at="2018-08-09T14:28:07Z" finished-at="2018-08-09T14:28:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webtableAllRecords -->
+        <test-method status="PASS" signature="webtableSpecificRecords()[pri:0, instance:cricket_scorecard@1efbd816]" name="webtableSpecificRecords" duration-ms="2475" started-at="2018-08-09T14:28:13Z" finished-at="2018-08-09T14:28:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webtableSpecificRecords -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:cricket_scorecard@1efbd816]" name="teardown" is-config="true" duration-ms="1910" started-at="2018-08-09T14:28:16Z" finished-at="2018-08-09T14:28:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- cricket_scorecard -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
