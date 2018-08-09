@@ -41,7 +41,7 @@ public class cricket_scorecard {
 	
 	//Test to display all records in the table
 	@Test
-	public void webtableAllRecords(){
+	public void webTableAllRecords(){
 		//Fetch all row elements for innings 1
 		List<WebElement> rows = driver.findElements(By.xpath(".//*[@id='innings_1']/div/div"));
 		//Fetch all elements (columns) in each row one by one
@@ -58,7 +58,7 @@ public class cricket_scorecard {
 	
 	//Test to display records for specific columns in a table
 	@Test
-	public void webtableSpecificRecords(){
+	public void webTableSpecificRecords(){
 		/*initialize position to the required columns to display. 
 		Here I want only Name, balls and runs columnns to be displayed*/
 		int positionName = 0;
@@ -102,8 +102,34 @@ public class cricket_scorecard {
 			}
 			System.out.println(" ");
 		}
-		
+		System.out.println("********************************************************");
 	}
+	
+	//Test to display all records for a particular player
+	@Test
+	public void webTablePlayer(){
+		int rowcount = 0;
+		List<WebElement> rows2 = driver.findElements(By.xpath(".//*[@id='innings_1']//div[@class='cb-col cb-col-100 cb-scrd-itms']"));
+		for(WebElement row2:rows2)
+		{
+			List<WebElement> columns2 = row2.findElements(By.xpath("./div"));
+			for(WebElement col2:columns2)
+			{
+				if(col2.getText().equalsIgnoreCase("Shaun Marsh"))
+				{
+					rowcount = 1;
+				}
+				
+				if (rowcount == 1)
+				{
+					//Print the required player details
+					System.out.print(col2.getText() + " ");
+				}
+			}
+			rowcount = 0;
+		}
+	}
+	
 	
 	@AfterTest
 	public void teardown()
